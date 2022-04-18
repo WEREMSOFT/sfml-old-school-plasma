@@ -11,7 +11,7 @@ all: $(OBJ)
 %.o: %.cpp
 	$(CC) -c $(FLAGS) $^ -o $@
 
-run_main: all
+run_main: clean all
 	$(TARGET)
 
 clean:
